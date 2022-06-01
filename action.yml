@@ -1,0 +1,24 @@
+name: set-package-version
+description: An action that sets the version in a package.json file from the input provided
+author: Breach AS
+inputs:
+  path:
+    required: false
+    type: string
+    description: Path to the Package.json file
+    default: ./package.json
+  version:
+    required: true
+    type: string
+    description: Version tag to set. Should follow SemVer v2
+
+# outputs:
+#   # Output goes here
+
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+
+runs:
+  using: 'node16'
+  main: 'index.js' # Entrypoint of action

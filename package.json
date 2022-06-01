@@ -1,0 +1,37 @@
+{
+  "name": "set-package-version",
+  "version": "0.1.0",
+  "description": "An action that sets the version in a package.json file from the input provided",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "npx tsc",
+    "package": "npx ncc build src/Action.ts -m --license third-party-licences.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breachvr/bump-package-action.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "version",
+    "package",
+    "upm"
+  ],
+  "author": "Breach AS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/breachvr/bump-package-action/issues"
+  },
+  "homepage": "https://github.com/breachvr/bump-package-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.38",
+    "@vercel/ncc": "^0.33.3",
+    "typescript": "^4.5.5"
+  }
+}
