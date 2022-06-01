@@ -36,8 +36,8 @@ class Action {
         console.log('Setting new version');
         package_content.version = version;
 
-        console.log('Writing file');
-        fs.writeFileSync(path, JSON.stringify(package_content, null, 2));
+        console.log('Writing to file');
+        fs.writeFileSync(path, JSON.stringify(package_content, null, 2) + '\n');
 
         console.log('Complete!');
     }
