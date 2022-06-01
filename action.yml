@@ -1,10 +1,19 @@
-name: template-action
-description: A github action template
+name: set-package-version
+description: An action that sets the version in a package.json file from the input provided
 author: Breach AS
 inputs:
-  # Inputs goes here
-outputs:
-  # Output goes here
+  path:
+    required: false
+    type: string
+    description: Path to the Package.json file
+    default: ./package.json
+  version:
+    required: true
+    type: string
+    description: Version tag to set. Should follow SemVer v2
+
+# outputs:
+#   # Output goes here
 
 branding:
   icon: 'upload-cloud'

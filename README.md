@@ -1,9 +1,10 @@
-# github-action-template
+# Set Package Version
 
-A template for setting up new github-actions
+An action that sets the version in a package.json file from the input provided
 
-1. Change name and values in `package.json`
-2. Change name and values in `action.yml`
-3. More?
-4. `npm install`
-5. -> Start development
+## Contributing 
+
+1. Make sure you have `Node` and `npm` installed
+2. Fork then clone the repo
+3. Open the repo on your computer enter `npm install` to get started
+4. Submit pull requests to this repo
