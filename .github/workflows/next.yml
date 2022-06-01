@@ -17,8 +17,8 @@ jobs:
     steps:
       - name: Setup git
         run: |
-          git config --global user.name '$USER'
-          git config --global user.email '$EMAIL'
+          git config --global user.name "$USER"
+          git config --global user.email "$EMAIL"
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
